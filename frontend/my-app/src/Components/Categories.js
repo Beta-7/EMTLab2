@@ -14,7 +14,7 @@ class Table extends Component {
     }
 
     getData(){
-        axios.get("http://localhost:8080/api/book/categories").then((data)=>{
+        axios.get("https://emtlab2171275.herokuapp.com/api/book/categories").then((data)=>{
             this.setState({
                 categories:data.data
             })
